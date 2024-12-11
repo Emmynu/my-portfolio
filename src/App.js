@@ -1,6 +1,6 @@
-import { createBrowserRouter, createRoutesFromElements,Route, RouterProvider,Link } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements,Route, RouterProvider } from "react-router-dom";
 import NavigationBar from "./components/navigation-bar";
-import Introduction from "./components/introduction";
+import Main from "./components/main";
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<NavigationBar />}>
-    <Route  index element={<Introduction />} />
+    <Route  index element={<Main />} />
   </Route>
 ))
 

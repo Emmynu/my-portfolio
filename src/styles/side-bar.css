@@ -41,7 +41,7 @@
         @apply text-emerald-600 transition-all delay-300
     }
     aside > section:last-child > a{
-        @apply mb-3 font-medium tracking-wide;   
+        @apply mb-3 font-medium tracking-wide text-black;   
     }
   
  

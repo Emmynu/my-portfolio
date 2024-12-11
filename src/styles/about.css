@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .about-container{
+        @apply grid grid-cols-1 md:grid-cols-2 items-center gap-4 px-8 md:px-24 py-24 
+    }
+    .about-container > section > img {
+        @apply h-64 lg:h-80
+    }
+    .about-container > section:last-child{
+        @apply mt-6
+    }
+    .about-container > section:last-child  h2{
+        @apply text-3xl tracking-wide font-bold p-4 border-b border-gray-300 border-spacing-7 mb-5;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+   
+    .about-container > section:last-child  p{
+        @apply text-sm md:text-[15px] leading-7 md:leading-8 
+    }
+}
