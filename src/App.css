@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    @apply m-0 p-0 h-[200vh]
+  }
+  .nav{
+    @apply bg-emerald-100   flex flex-row items-center justify-between md:justify-around p-5 flex-wrap w-full px-5 md:px-0 ;
+    transition: all .6s linear;
+  }
+  .nav-fixed{
+    @apply fixed left-0 right-0 bg-white  shadow-md p-5 z-50
+  }
+  .nav > section:first-child  {
+    @apply w-[45px] flex items-center cursor-pointer select-none
+  }
+  .nav > section > h2{
+    @apply font-bold text-[23px] md:text-[26px] text-black animate-once
+  }
+  .nav > section > img {
+    @apply w-full animate-once
+  }
+  .nav > section > a {
+    @apply ml-3 font-medium tracking-wide animate-once
+  }
+  .nav > section > a:hover{
+   @apply text-emerald-600 transition-all delay-300
+  }
+  .nav > section:last-child{
+    @apply block md:hidden cursor-pointer select-none
+  }
+  .nav > section:nth-child(2){
+    @apply hidden md:block ;
+    animation: animate 1.2s linear 1;
+    transition: all 1s linear;
+  }
+  @keyframes animate{
+    0%{
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    50%{
+      opacity: 0.5;
+      transform: translateX(25%);
+    }
+    75%{
+      opacity: 0.75;
+      transform: translateX(10%);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .nav >section:last-child{
+    animation: animate .7s linear 1;
+
+  }
+  .nav > section:last-child > div{
+    @apply w-8 h-[4px] bg-[#0FA122] flex flex-col mb-1 rounded-lg
+  } 
+}

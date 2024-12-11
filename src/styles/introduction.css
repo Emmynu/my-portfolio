@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    ::selection{
+        @apply bg-emerald-300 text-white
+    }
+    .intro-container{
+        @apply flex items-center  justify-between md:justify-evenly lg:justify-center px-5 md:gap-x-3 lg:gap-x-32 pt-20 pb-32 md:py-32 bg-emerald-100
+    }
+    .intro-container > section:first-child h2{
+        @apply text-6xl text-black font-bold
+    }
+    .intro-container > section:first-child h4{
+        @apply mt-4 text-3xl text-slate-700 capitalize tracking-wide
+    }
+    .intro-container > section:first-child h6{
+        @apply mt-2 text-lg text-slate-700 capitalize tracking-wide
+    }
+    .intro-container > section:last-child{
+        @apply hidden md:block
+    }
+    .intro-container > section:last-child > img{
+        @apply h-80 lg:h-96 cursor-pointer 
+    }
+    h6 ~ section{
+        @apply flex items-center mt-4
+    }
+    h6 ~ section > a > img{
+        @apply h-[35px] cursor-pointer select-none
+    }
+}

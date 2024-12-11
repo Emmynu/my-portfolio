@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .side-bar-container{
+        @apply fixed left-0 right-1/4 bottom-0 top-0 bg-white
+    }
+}
