@@ -6,8 +6,9 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
 
-export default function Introduction() {
 
+export default function Introduction() {
+    
     useEffect(()=>{
         AOS.init()
     },[])

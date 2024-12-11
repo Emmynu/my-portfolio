@@ -10,11 +10,14 @@ export default function NavigationBar() {
 
     window.addEventListener("scroll", function(){
         const scroll = this.pageYOffset
-        console.log(scroll);
         scroll > 80 ? setIsFixed(true) : setIsFixed(false)
     })
 
-    return <main>
+    function toggleNav() {
+        setIsNavOpen(!isNavOpen)
+    }
+    return <>
+    <main>
         <nav className={!isFixed ? "nav" : "nav nav-fixed"}>
             <section className="logo">
                 <img src={portfolioIcon} alt="portfolio-icon" />
@@ -27,13 +30,14 @@ export default function NavigationBar() {
                 <Link>Projects</Link>
                 <Link>Contact</Link>
             </section>
-            <section onClick={()=>setIsNavOpen(!isNavOpen)}>
+            <section onClick={toggleNav}>
                 <div className="hamburger-menu"></div>
                 <div className="hamburger-menu"></div>
                 <div className="hamburger-menu"></div>
             </section>
         </nav>
-      { isNavOpen && <SideBar />}
     <Outlet />
     </main>
+    <span className={"block md:hidden"}><SideBar isNavOpen={isNavOpen} toggleNav={toggleNav}/></span>
+    </>
 }
