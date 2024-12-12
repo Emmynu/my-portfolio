@@ -24,7 +24,7 @@ export default function Introduction() {
             </section>
         </section>
         <section data-aos={"zoom-in-down"} data-aos-duration={"1000"}>
-            <img src="https://react-vite-proj-18-tailwind-portfolio.netlify.app/assets/hero-01dff752.svg" alt="" />
+            <img src="https://react-vite-proj-18-tailwind-portfolio.netlify.app/assets/hero-01dff752.svg" alt="introduction-img" />
         </section> 
         
     </main>

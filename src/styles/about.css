@@ -4,7 +4,7 @@
 
 @layer base{
     .about-container{
-        @apply grid grid-cols-1 md:grid-cols-2 items-center gap-4 px-8 md:px-24 py-24 
+        @apply grid grid-cols-1 lg:grid-cols-2 items-center gap-4 px-8 md:px-24 py-24 
     }
     .about-container > section > img {
         @apply h-64 lg:h-80

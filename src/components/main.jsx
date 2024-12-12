@@ -1,11 +1,11 @@
 import About from "./about";
 import Introduction from "./introduction";
-import Projects from "./projects";
+import Skills from "./skills";
 
 export default function Main() {
     return <>
     <Introduction />
     <About />
-    {/* <Projects /> */}
+    <Skills />
     </>
 }
