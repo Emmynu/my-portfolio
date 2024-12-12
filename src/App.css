@@ -11,7 +11,7 @@
     transition: all .6s linear;
   }
   .nav-fixed{
-    @apply fixed left-0 right-0 bg-white  shadow-md p-5 z-50
+    @apply fixed left-0 right-0 bg-white  shadow-md p-5 z-30
   }
   .nav > section:first-child  {
     @apply w-[45px] flex items-center cursor-pointer select-none
@@ -61,4 +61,5 @@
   .nav > section:last-child > div{
     @apply w-8 h-[4px] bg-[#0FA122] flex flex-col mb-1 rounded-lg
   } 
+ 
 }

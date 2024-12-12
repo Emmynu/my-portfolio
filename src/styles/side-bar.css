@@ -4,6 +4,45 @@
 
 @layer base{
     .side-bar-container{
-        @apply fixed left-0 right-1/4 bottom-0 top-0 bg-white
+        @apply fixed inset-0 bg-white z-40 p-5
     }
+    .open-nav{
+        transform: translateX(0);
+        transition: all .5s linear;
+    }
+    .close-nav{
+        transform: translateX(-100%);
+        transition: all .5s linear;
+    }
+ 
+    aside > .logo{
+        @apply flex items-center justify-between
+    }
+    aside > .logo > div  {
+        @apply w-[45px] flex items-center cursor-pointer select-none
+      }
+    aside > .logo > div > h2{
+        @apply font-bold text-[23px] md:text-[26px] text-black animate-once
+      }
+    aside > .logo > div > img {
+        @apply w-full animate-once
+      }
+
+    .logo > div:last-child{
+        @apply w-[30px] h-[30px]
+    }
+    .logo > div:last-child > img{
+        @apply w-full h-full
+    }
+    aside > section:last-child{
+        @apply flex flex-col mt-6 ml-2;
+    }
+    aside > section:last-child > a:hover{
+        @apply text-emerald-600 transition-all delay-300
+    }
+    aside > section:last-child > a{
+        @apply mb-3 font-medium tracking-wide;   
+    }
+  
+ 
 }
