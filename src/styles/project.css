@@ -4,10 +4,45 @@
 
 @layer base{
     .project-container{
-        @apply text-black px-8 md:px-24 py-24
+        @apply text-black px-3 md:px-12 lg:px-24 py-24 select-none
     }
     .project-container > section > h3{
         @apply text-[28px] md:text-3xl tracking-wide font-bold p-4 border-b border-gray-300 border-spacing-10 mb-5;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     }
+    .project-container > section:last-child{
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 items-start
+    }
+    .project{
+        @apply bg-white cursor-pointer shadow-lg shadow-slate-200 p-5 hover:shadow-xl rounded-md border
+    }
+    .project > section h2{
+        @apply -mt-0  text-xl md:text-2xl font-medium border-b px-3 py-4  mb-2 border-b-slate-500
+    }
+    .project > section:first-child img{
+        @apply h-[35vh] w-[100%] object-cover
+    }
+    .project > section  h4{
+       @apply text-xs lg:text-sm tracking-wide leading-relaxed
+    }
+    .project > footer{
+        @apply  flex items-center justify-between mt-3
+    }
+    .project > footer > a{
+        @apply btn bg-black hover:bg-black text-white
+    }
+    .project .tech-used-container {
+        transition: all .3s linear;
+    }
+    .project:hover .tech-used-container {
+        @apply  absolute inset-0 bg-white opacity-85 z-20;
+   }
+   .tech-used-list{
+    @apply opacity-0 hidden;
+    transition: all .3s linear;
+   }
+   .project:hover .tech-used-list{
+    @apply opacity-100 block;
+    
+   }
 }
