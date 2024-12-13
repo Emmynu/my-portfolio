@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .contact-container{
+        @apply text-black py-24 px-5 md:px-14 lg:px-24 bg-emerald-50
+    }
+    .contact-container > section > h3{
+        @apply text-[28px] md:text-3xl tracking-wide font-bold p-4 border-b border-gray-300 border-spacing-10 mb-5;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+}
