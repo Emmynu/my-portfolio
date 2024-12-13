@@ -22,12 +22,16 @@ export default function Skills() {
             <h3>Tech Stack</h3>
             <article className="stack-container">
                 {techSkills.map(skill=>{
-                    const { skills, category } = skill
+                    const { skills, category, categoryIcon } = skill
                     return <>
                         <div onClick={()=>handleDropDown(category)}>
-                            <h3 >{category}</h3>
-                            {(isOpen === category) && <section>{skills?.map(stack=>{
-                                return  <article className="mb-4">
+                            <div className="category-container">
+                                <img src={categoryIcon} alt="category-icon" />
+                                <h3 >{category}</h3>
+                            </div>
+
+                            {(isOpen === category) && <section >{skills?.map(stack=>{
+                                return  <article className="mb-6">
                                 <img src={stack?.url} alt="stack-url" />
                                 <h2>{stack?.name}</h2>
                             </article>

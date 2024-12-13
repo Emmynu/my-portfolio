@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .project-container{
+        @apply text-black px-8 md:px-24 py-24
+    }
+    .project-container > section > h3{
+        @apply text-[28px] md:text-3xl tracking-wide font-bold p-4 border-b border-gray-300 border-spacing-10 mb-5;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+}

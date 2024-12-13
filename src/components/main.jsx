@@ -1,5 +1,6 @@
 import About from "./about";
 import Introduction from "./introduction";
+import Project from "./project";
 import Skills from "./skills";
 
 export default function Main() {
@@ -7,5 +8,6 @@ export default function Main() {
     <Introduction />
     <About />
     <Skills />
+    <Project />
     </>
 }

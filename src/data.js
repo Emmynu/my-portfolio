@@ -7,13 +7,20 @@ import NextJs from "./images/nextjs.png"
 import Redux from "./images/redux.png"
 import ReactIcon from "./images/react.png"
 import MongoDBIcon from "./images/mongodb.png"
-import Github from "./images/github-2.png"
+import Github from "./images/github.png"
 import Sass from "./images/sass.png"
 import Git from "./images/git.png"
+import  Backend from "./images/backend.png"
+import  Frontend from "./images/frontend.png"
+import  LanguageIcon from "./images/language.png"
+import  VersionControlIcon from "./images/version-control.png"
+import  BearCartImg from "./images/bearcart-img.jpeg"
 
-const project= [
+
+export const project= [
     {
         name: "BearCart",
+        url:BearCartImg,
         techUsed: ["ReactJs", "Tailwindcss", "Firebase", "sonner","Paystack ", "react-router-dom", "aos", "moment"],
         githubRepo: "https://github.com/Emmynu/store-project-gamma/tree/main",
         demoURL: "https://store-project-gamma.vercel.app/",
@@ -24,6 +31,7 @@ const project= [
 export const techSkills = [
     {
         category: "Language",
+        categoryIcon: LanguageIcon,
         skills: [
             {
                 url: JsIcon,
@@ -37,6 +45,7 @@ export const techSkills = [
     },
     {
         category: "Frontend Development",
+        categoryIcon: Frontend,
         skills: [
             {
                 url: ReactIcon,
@@ -66,6 +75,7 @@ export const techSkills = [
     },
     {
         category: "Backend Development",
+        categoryIcon: Backend,
         skills: [
             {
                 url: MongoDBIcon,
@@ -79,6 +89,7 @@ export const techSkills = [
     },
     {
         category: "Tools",
+        categoryIcon: VersionControlIcon,
         skills: [
             {
                 url: Git,
