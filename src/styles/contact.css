@@ -10,4 +10,10 @@
         @apply text-[28px] md:text-3xl tracking-wide font-bold p-4 border-b border-gray-300 border-spacing-10 mb-5;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     }
+    .contact-container > section:nth-child(2) {
+        @apply grid grid-cols-1 md:grid-cols-2 items-center
+    }
+    .contact-container > section:nth-child(2) > div > img {
+        /* @apply h-96 */
+    }
 }
