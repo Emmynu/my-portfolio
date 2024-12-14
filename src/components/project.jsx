@@ -12,7 +12,7 @@ export default function Project() {
         AOS.init()
     },[])
 
-    return <main className="project-container">
+    return <main className="project-container" id="projects" >
         <section>
             <h3 data-aos={"zoom-in"} data-aos-duration={"800"}>Web Creations</h3>
         </section>

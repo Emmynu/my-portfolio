@@ -9,7 +9,7 @@ export default function About() {
     useEffect(()=>{
         AOS.init()
     },[])
-    return <main className="about-container ">
+    return <main className="about-container" id="about">
             <section data-aos={"zoom-in-down"} data-aos-duration={600}>
                 <img src="https://react-vite-proj-18-tailwind-portfolio.netlify.app/assets/about-03f57d6e.svg" alt="about-me" />
             </section>

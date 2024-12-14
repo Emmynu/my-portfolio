@@ -7,19 +7,19 @@
     @apply m-0 p-0 bg-white text-black
   }
   .nav{
-    @apply bg-emerald-100   flex flex-row items-center justify-between md:justify-around p-5 flex-wrap w-full px-5 md:px-0 ;
+    @apply bg-emerald-100   flex flex-row items-center justify-between md:justify-around py-5 flex-wrap w-full px-5 md:px-0 ;
     transition: all .6s linear;
   }
   .nav-fixed{
-    @apply fixed left-0 right-0 bg-white  shadow-md p-5 z-30
+    @apply fixed left-0 right-0 bg-white  shadow-md py-4 px-5 z-30
   }
-  .nav > section:first-child  {
+  .nav > section:first-child > a  {
     @apply w-[45px] flex items-center cursor-pointer select-none
   }
-  .nav > section > h2{
-    @apply font-bold text-[23px] md:text-[26px] text-black animate-once
+  .nav > section > a > h2{
+    @apply font-bold text-[23px] text-black animate-once
   }
-  .nav > section > img {
+  .nav > section > a > img {
     @apply w-full animate-once
   }
   .nav > section > a {
