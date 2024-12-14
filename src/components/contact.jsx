@@ -12,7 +12,7 @@ export default function Contact() {
         AOS.init()
     },[])
 
-    return <main className="contact-container" data-aos={"fade-up"} data-aos-duration={"700"}>
+    return <main className="contact-container" data-aos={"fade-up"} data-aos-duration={"700"} id="contact">
         <section>
             <h3>Get In Touch</h3>
         </section>

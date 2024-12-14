@@ -19,16 +19,18 @@ export default function NavigationBar() {
     return <>
     <main>
         <nav className={!isFixed ? "nav" : "nav nav-fixed"}>
-            <section className="logo">
+           <section className="logo">
+            <a href="#home">    
                 <img src={portfolioIcon} alt="portfolio-icon" />
                 <h2>Port<span className="text-[#0FA122]">Folio</span></h2>
-            </section>
+            </a>
+           </section>
             <section >
-                <Link>Home</Link>
-                <Link>About</Link>
-                <Link>Skills</Link>
-                <Link>Projects</Link>
-                <Link>Contact</Link>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </section>
             <section onClick={toggleNav}>
                 <div className="hamburger-menu"></div>

@@ -16,11 +16,11 @@ import CancelIcon from "../images/cancel.png"
             <div><img src={CancelIcon} alt="cancel-icon" /></div>
         </section>
         <section >
-            <Link>Home</Link>
-            <Link>About</Link>
-            <Link>Skills</Link>
-            <Link>Projects</Link>
-            <Link>Contact</Link>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </section>
     </aside>
     )

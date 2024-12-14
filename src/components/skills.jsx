@@ -17,7 +17,7 @@ export default function Skills() {
     }
 
 
-    return <main className="skills-container">
+    return <main className="skills-container" id="skills">
         <section data-aos={"fade-up"} data-aos-duration={"600"}>
             <h3>Tech Stack</h3>
             <article className="stack-container">

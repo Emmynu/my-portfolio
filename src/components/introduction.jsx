@@ -13,7 +13,7 @@ export default function Introduction() {
         AOS.init()
     },[])
 
-    return <main className="intro-container" >
+    return <main className="intro-container" id="home">
         <section> 
            <h2 data-aos={"fade-left"} data-aos-duration={"1000"}>Hi, I'm Emmanuel</h2>
             <h4 data-aos={"fade-up-right"} data-aos-duration={"1150"}>Frontend Developer</h4>
