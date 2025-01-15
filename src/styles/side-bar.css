@@ -34,14 +34,17 @@
     .logo > div:last-child > img{
         @apply w-full h-full
     }
-    aside > section:last-child{
-        @apply flex flex-col mt-6 ml-2;
+    aside > section:last-child > div{
+        @apply flex items-center mb-5
     }
-    aside > section:last-child > a:hover{
+    aside > section:last-child{
+        @apply flex flex-col mt-9 ml-2;
+    }
+    aside > section:last-child > div > a:hover{
         @apply text-emerald-600 transition-all delay-300
     }
-    aside > section:last-child > a{
-        @apply mb-3 font-medium tracking-wide text-black;   
+    aside > section:last-child > div > a{
+        @apply  font-medium tracking-wide text-black ml-3;   
     }
   
  

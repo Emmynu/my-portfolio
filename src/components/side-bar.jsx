@@ -2,6 +2,11 @@ import portfolioIcon  from "../images/portfolio-icon.png"
 import { Link } from "react-router-dom"
 import ".././styles/side-bar.css"
 import CancelIcon from "../images/cancel.png"
+import homeIcon from "../images/home.png"
+import projectIcon from "../images/projects.png"
+import contactIcon from "../images/contact-icon.png"
+import skillsIcon from "../images/skills.png"
+import aboutIcon from "../images/about.png"
 
  export default function SideBar({ isNavOpen, toggleNav }) {
     
@@ -16,12 +21,29 @@ import CancelIcon from "../images/cancel.png"
             <div><img src={CancelIcon} alt="cancel-icon" /></div>
         </section>
         <section >
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </section>
+                <div >
+                    <img src={homeIcon} alt="home-icon" />
+                    <a href="#home">Home</a>
+                </div>
+                <div>
+                    <img src={aboutIcon} alt="about-icon" />
+                    <a href="#about">About</a>
+                </div>
+                <div>
+                    <img src={skillsIcon} alt="skills-icon" />
+                    <a href="#skills">Skills</a>
+                </div>
+                
+                <div>
+                    <img src={projectIcon} alt="projects-icon" />
+                    <a href="#projects">Projects</a>
+                </div>
+                <div>
+                    <img src={contactIcon} alt="contact-icon" />
+                    <a href="#contact">Contact</a>
+                </div>
+                
+            </section>
     </aside>
     )
  }

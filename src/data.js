@@ -15,6 +15,7 @@ import  Frontend from "./images/frontend.png"
 import  LanguageIcon from "./images/language.png"
 import  VersionControlIcon from "./images/version-control.png"
 import  BearCartImg from "./images/bearcart-img.jpeg"
+import  VectorPayImg from "./images/vector-pay.jpeg"
 
 
 export const project= [
@@ -26,6 +27,14 @@ export const project= [
         demoURL: "https://store-project-gamma.vercel.app/",
         description: "BearCart is an e-commerce application built React, Firebase, Paystack and other react libraries. The main goal of this application is to provide a secure and seamless purchasing experience while addressing the issue of scams.it acts as an intermediary between the buyer and the seller, connnecting them together for a trustworthy transaction."
     },
+    {
+        name: "VectorPay",
+        url: VectorPayImg,
+        techUsed: ["HTML", "CSS", "JavaScript", "Firebase", "Toastify"],
+        githubRepo: "https://github.com/Emmynu/Niit-Project",
+        demoURL: "https://niit-project.vercel.app/",
+        description: "VectorPay is a web application designed to replicate the core functionalities of mobile money platforms like OPay. Developed as a final project for my NIIT (National Institute of Information Technology) program, VectorPay provides users with a convenient way to manage their finances, including deposits, transfers, and withdrawals."
+    }
  
 ]
 
