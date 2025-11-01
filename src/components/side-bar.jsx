@@ -1,5 +1,4 @@
 import portfolioIcon  from "../images/portfolio-icon.png"
-import { Link } from "react-router-dom"
 import ".././styles/side-bar.css"
 import CancelIcon from "../images/cancel.png"
 import homeIcon from "../images/home.png"
