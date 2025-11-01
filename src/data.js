@@ -22,7 +22,7 @@ import  VectorPayV2Img from "./images/vectorPayv2Img.jpeg"
 export const project= [
 
     {
-        name: "VectorPay-v2",
+        name: "VectorPay V2",
         url: VectorPayV2Img,
         techUsed: ["Next.js", "Prisma", "MongoDB", "Firebase", "Speakeasy", "Korapay", "Tailwindcss", "DaisyUI"],
         githubRepo: "https://github.com/Emmynu/Vector-pay-v2",
