@@ -1,5 +1,6 @@
 import JsIcon from "./images/js.png"
 import firebaseIcon from "./images/firebase.png"
+import prismaIcon from "./images/prisma-orm.png"
 import TypescriptIcon from "./images/typescript.png"
 import HtmlIcon from "./images/html.png"
 import TailwindcssIcon from "./images/tailwindcss.png"
@@ -41,7 +42,7 @@ export const project= [
     },
  
     {
-        name: "BearCart",
+        name: "Bearcart",
         url:BearCartImg,
         techUsed: ["ReactJs", "Tailwindcss", "Firebase", "sonner","Paystack ", "react-router-dom", "aos", "moment"],
         githubRepo: "https://github.com/Emmynu/store-project-gamma/tree/main",
@@ -103,6 +104,10 @@ export const techSkills = [
             {
                 url: MongoDBIcon,
                 name: "MongoDB"
+            },
+            {
+                url: prismaIcon,
+                name: "Prisma ORM"
             },
             {
                 url: firebaseIcon,
