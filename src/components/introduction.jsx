@@ -20,7 +20,7 @@ export default function Introduction() {
             <h6 data-aos={"fade-down-right"} data-aos-duration={"1200"}>Passion for crafting elegant web applications</h6>
             <section data-aos={"zoom-in"} data-aos-duration={"1300"}>
                <Link to={"https://github.com/Emmynu"}><img src={GithubIcon} alt="github-icon" /></Link>
-               <Link to={"https://www.linkedin.com/in/similoluwa-emmanuel-082873260"}><img src={LinkedInIcon} alt="linkedin-icon" className="ml-2" /> </Link>
+               <Link to={"https://www.linkedin.com/in/adelaja-similoluwa-082873260?utm_source=share_via&utm_content=profile&utm_medium=member_ios"}><img src={LinkedInIcon} alt="linkedin-icon" className="ml-2" /> </Link>
             </section>
         </section>
         <section data-aos={"zoom-in-down"} data-aos-duration={"1000"}>
